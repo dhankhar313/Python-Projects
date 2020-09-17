@@ -45,12 +45,12 @@ def send_mail(url, price):
 if __name__ == "__main__":
     a_link = input('Enter Amazon link:')
     f_link = input('Enter Flipkart link:')
+    range = input('Enter your maximum price:')
 
     while True:
         amazon_price = check_amazon_price(a_link)
         flipkart_price = check_flipkart_price(f_link)
-        range = input('Enter your maximum price:')
-
+        
         print(amazon_price, flipkart_price)
 
         if amazon_price <= range and flipkart_price <= range:
