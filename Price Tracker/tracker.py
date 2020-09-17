@@ -49,15 +49,16 @@ if __name__ == "__main__":
     while True:
         amazon_price = check_amazon_price(a_link)
         flipkart_price = check_flipkart_price(f_link)
+        range = input('Enter your maximum price:')
 
         print(amazon_price, flipkart_price)
 
-        if amazon_price < 100000 and flipkart_price < 100000:
+        if amazon_price < range and flipkart_price < range:
             send_mail(a_link, amazon_price)
             send_mail(f_link, flipkart_price)
-        elif amazon_price < 100000:
+        elif amazon_price < range:
             send_mail(a_link, amazon_price)
-        elif flipkart_price < 100000:
+        elif flipkart_price < range:
             send_mail(f_link, flipkart_price)
         else:
             print('Still out of your price range!!')

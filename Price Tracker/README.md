@@ -5,14 +5,14 @@
 
         Product's Amazon Link
 
-        Product's Flipkart Link or you can Comment out  check_flipkart_price() if not applicable
+        Product's Flipkart Link or you can comment out check_flipkart_price() if not applicable
 
         Sender Email
 
-        App password (Google `App passwords` and    create one for mail for Windows)
+        App password (Google 'App passwords' and create one for mail for Windows)
 
         Receiver Email 
 
-### You can can change the time.sleep(seconds) function argument if you want to increase or decrease the frequency of the scraper.
+### You can can change the time.sleep(seconds) function argument if you want to increase or decrease the frequency of the web scraper.
 
-# Just let it run in background and relax !!
+# Just let it run in background and relax and you will get a mail when the product is in your price range!!
