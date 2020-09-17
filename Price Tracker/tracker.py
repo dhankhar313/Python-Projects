@@ -53,12 +53,12 @@ if __name__ == "__main__":
 
         print(amazon_price, flipkart_price)
 
-        if amazon_price < range and flipkart_price < range:
+        if amazon_price <= range and flipkart_price <= range:
             send_mail(a_link, amazon_price)
             send_mail(f_link, flipkart_price)
-        elif amazon_price < range:
+        elif amazon_price <= range:
             send_mail(a_link, amazon_price)
-        elif flipkart_price < range:
+        elif flipkart_price <= range:
             send_mail(f_link, flipkart_price)
         else:
             print('Still out of your price range!!')
